@@ -4,7 +4,7 @@
 
 		<Body :message="message" />
 
-		<Footer :id="id" :stars="stars" :reports="reports" />
+		<Footer :id="id" :stars="stars" :reports="reports" @star="publicationStar" @report="publicationReport" />
 	</li>
 </template>
 
@@ -16,6 +16,15 @@ import Footer from '@/components/publication/Footer'
 export default {
 	name: 'Publication',
 	components: { Header, Body, Footer },
-	props: ['id', 'message', 'date', 'author', 'stars', 'reports']
+	props: ['id', 'message', 'date', 'author', 'stars', 'reports'],
+	methods: {
+		publicationStar(payload) {
+			this.$emit('clickStar', payload)
+		},
+
+		publicationReport(payload) {
+			this.$emit('clickReport', payload)
+		}
+	}
 }
 </script>

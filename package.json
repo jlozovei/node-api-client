@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/jlozovei/node-api-client#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "moment": "^2.22.1",
     "vue": "^2.5.16",
     "vue-awesome": "^3.0.0",

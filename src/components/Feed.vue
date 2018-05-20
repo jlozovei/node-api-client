@@ -7,7 +7,9 @@
 			:date="publication.created_at"
 			:author="publication.author_github"
 			:stars="publication.stars"
-			:reports="publication.reports" />
+			:reports="publication.reports"
+			@clickStar="receiveStar"
+			@clickReport="receiveReport" />
 	</ul>
 
 	<div class="empty" v-else>
@@ -33,6 +35,8 @@
 </style>
 
 <script>
+import PublicationService from '@/services/PublicationService'
+
 import strings from '@/utils/strings'
 import Publication from '@/components/Publication'
 
@@ -42,6 +46,36 @@ export default {
 	data() {
 		return {
 			strings: strings
+		}
+	},
+	methods: {
+		receiveStar(payload) {
+			this.starPublication(payload)
+		},
+
+		receiveReport(payload) {
+			this.reportPublication(payload)
+		},
+
+		async searchPublications(payload) {
+			const response = await PublicationService.searchPublications(payload)
+
+			if (response && response.data) this.publications = response.data
+			else console.error('no lucky for you')
+		},
+
+		async starPublication(payload) {
+			const response = await PublicationService.starPublication(payload)
+
+			if (response && response.data) this.$emit('getPublications')
+			else console.error('no lucky for you')
+		},
+
+		async reportPublication(payload) {
+			const response = await PublicationService.reportPublication(payload)
+
+			if (response && response.data) this.$emit('getPublications')
+			else console.log('no lucky for you')
 		}
 	},
 	components: { Publication }
