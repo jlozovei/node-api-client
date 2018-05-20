@@ -1,16 +1,30 @@
 {
   "name": "node-api-client",
   "version": "0.1.0",
-  "private": true,
+  "description": "Node API Tutorial - client-side",
   "scripts": {
     "start": "npm run serve",
+    "test": "npm run e2e:open",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlozovei/node-api-client.git"
+  },
+  "author": "Julio Lozovei <jlozovei@gmail.com> (https://jlozovei.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlozovei/node-api-client/issues"
+  },
+  "homepage": "https://github.com/jlozovei/node-api-client#readme",
   "dependencies": {
+    "moment": "^2.22.1",
     "vue": "^2.5.16",
+    "vue-awesome": "^3.0.0",
+    "vue-progressive-image": "^2.5.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
