@@ -4,10 +4,11 @@
   "description": "Node API Tutorial - client-side",
   "scripts": {
     "start": "npm run serve",
-    "test": "npm run e2e:open",
+    "test": "npm run test:e2e",
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
+    "e2e": "vue-cli-service e2e",
     "test:e2e": "vue-cli-service test:e2e"
   },
   "repository": {
