@@ -1,29 +1,26 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+	<div id="app">
+		<Header />
+		<router-view/>
+		<Footer />
+	</div>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+* {
+	font-family: 'Montserrat', arial;
+	box-sizing: border-box;
 }
 </style>
+
+<script>
+import Header from '@/components/layout/Header'
+import Footer from '@/components/layout/Footer'
+
+export default {
+	name: 'App',
+	components: { Header, Footer }
+}
+</script>
