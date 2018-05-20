@@ -1,0 +1,18 @@
+.footer{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background-color: $white;
+	color: $text;
+	text-align: center;
+	border-top: 1px solid $lightGrey;
+	margin-top: 2rem;
+	padding: 2rem 0;
+
+	a{
+		color: $blue;
+		text-decoration: none;
+	}
+}

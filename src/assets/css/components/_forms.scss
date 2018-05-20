@@ -1,0 +1,33 @@
+.form{
+	padding: 1rem 1rem 0;
+	background-color: $white;
+	border: 1px solid $lightGrey;
+	border-radius: 2px;
+	margin-bottom: 2rem;
+
+	&__row{
+		small{
+			position: absolute;
+			bottom: -1.125rem;
+			left: 0;
+			height: 1.125rem;
+			opacity: 0;
+			transition: all ease-in-out 200ms;
+			
+
+			&.active{
+				opacity: 1;
+			}
+		}
+
+		.limiter{
+			display: inline-block;
+			float: right;
+			font-size: .75rem;
+			color: $black;
+			transition: all ease-in-out 200ms;
+
+			&.highlight{ color: $red; }
+		}
+	}
+}

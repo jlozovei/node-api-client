@@ -1,0 +1,13 @@
+.button{
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1rem;
+	transition: all ease-in-out 200ms;
+
+	&:focus{ outline: none; }
+
+	& + .button{ margin-left: 1rem; }
+}

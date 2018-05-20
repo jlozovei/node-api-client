@@ -1,0 +1,25 @@
+.feed{
+	position: relative;
+	margin: 0 auto;
+}
+
+.empty{
+	font-size: 3rem;
+	font-weight: bold;
+	color: $text;
+	padding: 2rem;
+	text-align: center;
+
+	.progressive-image{
+		position: relative;
+		margin-bottom: 2rem;
+
+		&-wrapper{
+			padding-bottom: 0!important;
+			max-width: 35%;
+			margin: 0 auto;
+
+			img{ position: relative; }
+		}
+	}
+}

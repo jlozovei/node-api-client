@@ -1,0 +1,29 @@
+.form{
+	display: block;
+	position: relative;
+
+	&__row{
+		position: relative;
+		margin-bottom: 2rem;
+
+		&--buttons{
+			text-align: right;
+		}
+	}
+
+	&__input{
+		display: block;
+		width: 100%;
+		resize: none;
+		background-color: $inputBg;
+		border: 1px solid $inputBorder;
+		border-radius: 2px;
+		font-size: 1rem;
+		color: $text;
+		padding: .5rem;
+		transition: all ease-in-out 200ms;
+
+		&:hover{ border-color: $inputHoverBorder; }
+		&:focus{ border-color: $inputFocusBorder; }
+	}
+}

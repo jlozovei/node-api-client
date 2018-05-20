@@ -1,0 +1,10 @@
+#app{
+	position: relative;
+	background-color: $appBg;
+}
+
+.wrapper{
+	width: 80%;
+	max-width: $gridWidth;
+	margin: $headerHeight+32 auto 0;
+}

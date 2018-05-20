@@ -1,0 +1,34 @@
+.button{
+	padding: .875rem;
+	border: 1px solid transparent;
+	border-radius: 2px;
+
+	&--white{
+		background-color: $whiteButtonBg;
+		border-color: $whiteButtonBorder;
+	}
+
+	&--cancel, &--confirm{
+		&:hover, &:focus{ color: $white; }
+	}
+
+	&--cancel{
+		color: $cancelButtonColor;
+
+		&:hover, &:focus{ border-color: $cancelButtonBorder; }
+
+		&:hover{ background-color: $cancelButtonBgHover; }
+
+		&:focus{ background-color: $cancelButtonBgFocus; }
+	}
+
+	&--confirm{
+		color: $confirmButtonColor;
+
+		&:hover, &:focus{ border-color: $confirmButtonBorder; }
+
+		&:hover{ background-color: $confirmButtonBgHover; }
+
+		&:focus{ background-color: $confirmButtonBgFocus; }
+	}
+}

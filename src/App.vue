@@ -13,6 +13,8 @@
 	font-family: 'Montserrat', arial;
 	box-sizing: border-box;
 }
+
+@import './assets/css/_base';
 </style>
 
 <script>

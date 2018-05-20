@@ -4,14 +4,6 @@
 	</footer>
 </template>
 
-<style lang="scss" scoped>
-.footer {
-	border-top: 1px solid #ccc;
-	text-align: center;
-	margin-top: 2rem;
-}
-</style>
-
 <script>
 export default {
 	name: 'Footer',

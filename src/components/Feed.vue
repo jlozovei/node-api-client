@@ -18,22 +18,6 @@
 	</div>
 </template>
 
-<style lang="scss">
-.feed {
-	display: block;
-	position: relative;
-	padding: 0;
-
-	li {
-		display: block;
-		width: 100%;
-		margin-bottom: 2rem;
-		border: 1px solid #ccc;
-		padding: 1rem;
-	}
-}
-</style>
-
 <script>
 import PublicationService from '@/services/PublicationService'
 
