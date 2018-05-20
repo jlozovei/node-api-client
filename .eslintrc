@@ -3,5 +3,12 @@
   "extends": [
     "plugin:vue/essential",
     "@vue/prettier"
-  ]
+  ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "curly": ["error", "multi", "consistent"]
+  }
 }
