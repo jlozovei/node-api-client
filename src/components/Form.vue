@@ -86,7 +86,6 @@ export default {
 					author_github: this.publication.author_github,
 					created_at: timestamp,
 					deleted_at: '',
-					gif_url: '',
 					stars: 0,
 					reports: 0
 				}
