@@ -96,7 +96,7 @@ export default {
 				this.$emit('getPublications')
 				this.cleanForm()
 			} else {
-				console.log('bad lucky for u')
+				alert('bad lucky for u')
 			}
 		}
 	}

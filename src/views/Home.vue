@@ -27,7 +27,7 @@ export default {
 			const response = await PublicationService.getPublications()
 
 			if (response && response.data) this.publications = response.data
-			else console.error('no lucky for you')
+			else alert('no lucky for you')
 		},
 
 		parentGetPublications() {

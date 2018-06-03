@@ -45,21 +45,21 @@ export default {
 			const response = await PublicationService.searchPublications(payload)
 
 			if (response && response.data) this.publications = response.data
-			else console.error('no lucky for you')
+			else alert('no lucky for you')
 		},
 
 		async starPublication(payload) {
 			const response = await PublicationService.starPublication(payload)
 
 			if (response && response.data) this.$emit('getPublications')
-			else console.error('no lucky for you')
+			else alert('no lucky for you')
 		},
 
 		async reportPublication(payload) {
 			const response = await PublicationService.reportPublication(payload)
 
 			if (response && response.data) this.$emit('getPublications')
-			else console.log('no lucky for you')
+			else alert('no lucky for you')
 		}
 	},
 	components: { Publication }

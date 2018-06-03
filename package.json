@@ -5,11 +5,13 @@
   "scripts": {
     "start": "npm run serve",
     "test": "npm run test:e2e",
-    "serve": "vue-cli-service serve --open",
+    "serve": "export NODE_ENV=prod && vue-cli-service serve --open",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "e2e": "vue-cli-service e2e",
-    "test:e2e": "vue-cli-service test:e2e"
+    "test:e2e": "vue-cli-service test:e2e",
+    "predeploy": "npm run build",
+    "deploy": "node node_modules/gh-pages/bin/gh-pages-clean.js && gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/jlozovei/node-api-client/issues"
   },
-  "homepage": "https://github.com/jlozovei/node-api-client#readme",
+  "homepage": "https://jlozovei.github.io/node-api-client",
   "dependencies": {
     "axios": "^0.18.0",
     "moment": "^2.22.1",
@@ -36,6 +38,7 @@
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
     "@vue/cli-service": "^3.0.0-beta.10",
     "@vue/eslint-config-prettier": "^3.0.0-beta.10",
+    "gh-pages": "^1.2.0",
     "lint-staged": "^6.0.0",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
