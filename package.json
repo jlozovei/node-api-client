@@ -25,7 +25,7 @@
   "homepage": "https://jlozovei.github.io/node-api-client",
   "dependencies": {
     "axios": "^0.18.0",
-    "moment": "^2.22.1",
+    "moment": "^2.29.2",
     "vue": "^2.5.16",
     "vue-awesome": "^3.0.0",
     "vue-progressive-image": "^2.5.0",
